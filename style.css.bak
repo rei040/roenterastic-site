@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #111;
+}
+
+.sidebar {
+  width: 250px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-right: 2px solid #eee;
+  height: 100vh;
+  position: fixed;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.sidebar nav li {
+  margin: 15px 0;
+}
+
+.sidebar nav li.active a,
+.sidebar nav a:hover {
+  font-weight: bold;
+  color: #d60054;
+  text-decoration: none;
+}
+
+.content {
+  margin-left: 270px;
+  padding: 30px;
+  width: calc(100% - 270px);
+}
+
+.hero {
+  background: url('images/hero.jpg') no-repeat center center/cover;
+  padding: 100px 30px;
+  color: #111;
+  text-align: center;
+}
+
+/* 4. PERSONALIZAR MARCA "ROENTERASTIC" */
+    .titulo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 64px;
+      font-weight: 600;
+      background: linear-gradient(to right, #00c37a, #007acc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      margin-bottom: 10px;
+    }
+
+.subtitulo {
+  font-size: 20px;
+  color: #eee;
+}
+
+.descripcion {
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      color: #000;
+      border-radius: 8px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 16px;
+      line-height: 1.6em;
+}
+
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.card .imagen {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.servicio1 { background-image: url('images/whatsapp.jpg'); }
+.servicio2 { background-image: url('images/reservaciones.jpg'); }
+.servicio3 { background-image: url('images/datos.jpg'); }
+.servicio4 { background-image: url('images/soporte.jpg'); }
+
+.contacto {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contacto button {
+  background: #d60054;
+  color: white;
+  padding: 12px 30px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+}

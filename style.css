@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #111;
+  background-color: #f4f4f4;
+}
+
+/* Sidebar izquierdo */
+.sidebar {
+  width: 250px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-right: 2px solid #eee;
+  height: 100vh;
+  position: fixed;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.sidebar nav li {
+  margin: 15px 0;
+}
+
+.sidebar nav li.active a,
+.sidebar nav a:hover {
+  font-weight: bold;
+  color: #d60054;
+  text-decoration: none;
+}
+
+.content {
+  margin-left: 270px;
+  padding: 30px;
+  width: calc(100% - 270px);
+}
+
+/* Imagen de fondo tipo HERO */
+.hero {
+  background: url('images/hero.jpg') no-repeat center center/cover;
+  padding: 100px 30px;
+  color: white;
+  text-align: center;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Marca ROENTERASTIC centrada con estilo */
+.titulo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  background: linear-gradient(to right, #00c37a, #007acc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  margin: 0;
+}
+
+.descripcion {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  color: #000;
+  border-radius: 8px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+/* Servicios visuales */
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.servicio {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.servicio img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.servicio h3 {
+  margin: 10px 0 5px;
+  color: #007acc;
+}
+
+.servicio p {
+  font-size: 14px;
+  color: #333;
+}
